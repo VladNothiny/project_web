@@ -4,6 +4,7 @@ localStorage.setItem('systemInfo', browserData);
 document.getElementById('footer').innerText = localStorage.getItem('systemInfo');
 
 const variantNumber = 1;
+
 async function getComments() {
     const container = document.getElementById('comments-container');
     try {
@@ -21,6 +22,7 @@ async function getComments() {
         container.innerText = 'Помилка завантаження коментарів.';
     }
 }
+
 getComments();
 
 setTimeout(() => {
@@ -44,6 +46,7 @@ function setThemeByTime() {
         body.classList.remove('light-theme');
     }
 }
+
 setThemeByTime();
 
 themeBtn.onclick = () => {
