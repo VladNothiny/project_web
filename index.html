@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <title>Владислав Ващишин - Резюме</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="light-theme"> <div style="text-align: right; padding: 10px;">
+        <button id="theme-toggle">Змінити тему</button>
+    </div>
+
+    <h1>Владислав Ващишин</h1>
+
+    <div class="contact-info">
+        <p><b>Email:</b> vladyslav0305@gmail.com</p>
+        <p><b>Телефон:</b> +380962314830</p>
+    </div>
+
+    <section>
+        <h2>Про мене</h2>
+        <p>Я студент, навчаюсь в Львівській політехніці. Вивчаю машинне навчання та дата аналіз.</p>
+    </section>
+
+    <section>
+        <h2>Відгуки попередніх роботодавців</h2>
+        <div id="comments-container">Завантаження коментарів...</div>
+    </section>
+
+    <section>
+        <h2>Освіта</h2>
+        <p>Національний університет "Львівська політехніка"</p>
+    </section>
+
+    <section>
+        <h2>Навички</h2>
+        <ul>
+            <li>Pandas</li>
+            <li>Scikit-learn</li>
+            <li>NumPy</li>
+        </ul>
+    </section>
+
+    <section>
+        <h2>Досвід</h2>
+        <ul>
+            <li>Навчальні проєкти</li>
+        </ul>
+    </section>
+
+    <div id="feedback-modal" class="modal">
+        <div class="modal-content">
+            <h3>Зворотній зв'язок</h3>
+            <form action="https://formspree.io/f/xvzwnkag" method="POST">
+                <input type="text" name="name" placeholder="Ваше ім'я" required>
+                <input type="email" name="email" placeholder="Ваш Email" required>
+                <input type="tel" name="phone" placeholder="Номер телефону">
+                <textarea name="message" placeholder="Ваше повідомлення"></textarea>
+                <button type="submit" class="submit-btn">Відправити</button>
+                <button type="button" id="close-modal" class="close-btn">Закрити</button>
+            </form>
+        </div>
+    </div>
+
+    <footer id="footer"></footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

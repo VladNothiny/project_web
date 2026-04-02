@@ -1,0 +1,62 @@
+body {
+    transition: background-color 0.3s, color 0.3s;
+    margin: 0 50px;
+    font-family: "Times New Roman", Times, serif;
+}
+body.light-theme {
+    background-color: #eef2f3;
+    color: #333333;
+}
+body.light-theme h2 { background-color: #cccccc; }
+body.dark-theme {
+    background-color: #1a1a1a;
+    color: #f0f0f0;
+}
+body.dark-theme h2 { background-color: #444444; color: white; }
+body.dark-theme h1 { color: #8080ff; }
+h1 {
+    text-align: center;
+    color: #000080;
+    text-decoration: underline;
+}
+h2 {
+    padding: 5px;
+    border-radius: 4px;
+    font-size: 20px;
+}
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.7);
+}
+.modal-content {
+    background-color: white;
+    margin: 10% auto;
+    padding: 20px;
+    width: 350px;
+    border-radius: 10px;
+    color: black;
+}
+.modal-content input, .modal-content textarea {
+    width: 90%;
+    margin-bottom: 10px;
+    padding: 8px;
+}
+.submit-btn { background-color: #28a745; color: white; border: none; padding: 10px; cursor: pointer; }
+.close-btn { background-color: #dc3545; color: white; border: none; padding: 10px; cursor: pointer; }
+footer {
+    margin-top: 30px;
+    padding: 20px;
+    border-top: 1px solid #ccc;
+    font-size: 12px;
+}
+.comment-item {
+    border-bottom: 1px solid #999;
+    margin-bottom: 10px;
+    padding-bottom: 5px;
+}
